@@ -8,7 +8,7 @@ var uniqid = require('uniqid');
 const fs= require("fs");
 const { parse } = require('path');
 const app = express();
-const PORT = process.env.PORT; 
+const PORT = process.env.PORT || 3001; 
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
